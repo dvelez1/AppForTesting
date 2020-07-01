@@ -32,8 +32,8 @@ namespace ConsoleAppForTest
             }
 
             customermodels.Where(c => c.name =="Javier").Select(c => { c.name = "Pedro"; c.lastname="Garcia"; return c; }).ToList();
-
-
+            Customer.customermodel Addcustomermodel = new Customer.customermodel { CustId = 4, name = "Papo", lastname = "DelPueblo" };
+            customermodels.Add(Addcustomermodel);
 
         }
 
